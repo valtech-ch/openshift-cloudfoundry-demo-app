@@ -155,6 +155,27 @@ Then run:
 
 For more information refer to [Using Docker and Docker-Compose][], this page also contains information on the docker-compose sub-generator (`jhipster docker-compose`), which is able to generate docker configurations for one or several JHipster applications.
 
+## Run application locally
+
+Start mongodb
+```
+    docker run -d -p 27017:27017 -v ~/data:/data/db mongo
+```
+Then run
+```
+    mvn spring-boot:run
+```
+    
+Open application
+
+    Goto http://localhost:8080
+    
+## Deploy to CloudFoundry
+TBD
+
+## Deploy to OpenShift
+TBD
+
 ## Continuous Integration (optional)
 
 To configure CI for your project, run the ci-cd sub-generator (`jhipster ci-cd`), this will let you generate configuration files for a number of Continuous Integration systems. Consult the [Setting up Continuous Integration][] page for more information.

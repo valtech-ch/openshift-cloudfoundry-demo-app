@@ -1,0 +1,52 @@
+{
+  "generator-jhipster": {
+    "applicationType": "monolith",
+    "gitCompany": "",
+    "baseName": "PinguinApp",
+    "packageName": "ch.pinguin",
+    "packageFolder": "ch/pinguin",
+    "serverPort": 8080,
+    "serviceDiscoveryType": false,
+    "authenticationType": "session",
+    "uaaBaseName": "../uaa",
+    "cacheProvider": "no",
+    "enableHibernateCache": false,
+    "websocket": false,
+    "databaseType": "mongodb",
+    "devDatabaseType": "mongodb",
+    "prodDatabaseType": "mongodb",
+    "searchEngine": false,
+    "enableSwaggerCodegen": false,
+    "messageBroker": false,
+    "buildTool": "maven",
+    "useSass": false,
+    "clientPackageManager": "npm",
+    "testFrameworks": [
+      "protractor"
+    ],
+    "enableTranslation": true,
+    "nativeLanguage": "en",
+    "languages": [
+      "de",
+      "en"
+    ],
+    "clientFramework": "angularX",
+    "jhiPrefix": "jhi",
+    "jhipsterVersion": "5.5.0",
+    "rememberMeKey": "8c5dfda9d57e402a0b90fe933f32303ba3ad0324871d56f065998654a87814597a04b65046620ccc8e48def330bab4d7085d",
+    "appsFolders": [
+      "pinguin-respository"
+    ],
+    "directoryPath": "../",
+    "monitoring": "no",
+    "jwtSecretKey": "ZWRlZGZiZjlhYzA4ZmFiYzc0OGFiYTcwZTg5NDc4Y2ZiYmZmMzIwOGUxMjRkMjA5MzU2ZGNjNDM0NTNmOWMxZjdmNDY3YWI1N2ZjMWVhZjQzN2YzMjkyMDk4ZGMwZTMyMjJmOQ==",
+    "dockerRepositoryName": "pinguin-docker-repository",
+    "dockerPushCommand": "docker push",
+    "openshiftNamespace": "default",
+    "storageType": "persistent",
+    "registryReplicas": 2
+  },
+  "git-provider": "GitHub",
+  "git-company": "fbareuther",
+  "repository-name": "pinguin-respository"
+}

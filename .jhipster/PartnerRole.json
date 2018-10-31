@@ -1,0 +1,26 @@
+{
+    "name": "PartnerRole",
+    "fields": [
+        {
+            "fieldName": "roleName",
+            "fieldType": "String"
+        }
+    ],
+    "relationships": [
+        {
+            "relationshipName": "partnerAccount",
+            "otherEntityName": "partnerAccount",
+            "relationshipType": "many-to-one",
+            "otherEntityField": "id"
+        }
+    ],
+    "changelogDate": "20181029151719",
+    "entityTableName": "partner_role",
+    "dto": "no",
+    "pagination": "no",
+    "service": "serviceImpl",
+    "jpaMetamodelFiltering": false,
+    "fluentMethods": true,
+    "clientRootFolder": "",
+    "applications": "*"
+}

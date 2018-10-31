@@ -1,0 +1,38 @@
+{
+    "name": "PartnerAccount",
+    "fields": [
+        {
+            "fieldName": "accountName",
+            "fieldType": "String"
+        }
+    ],
+    "relationships": [
+        {
+            "relationshipName": "partner",
+            "otherEntityName": "partner",
+            "relationshipType": "many-to-one",
+            "otherEntityField": "id"
+        },
+        {
+            "relationshipType": "one-to-many",
+            "relationshipName": "role",
+            "otherEntityName": "partnerRole",
+            "otherEntityRelationshipName": "partnerAccount"
+        },
+        {
+            "relationshipName": "partnerUser",
+            "otherEntityName": "partnerUser",
+            "relationshipType": "many-to-one",
+            "otherEntityField": "id"
+        }
+    ],
+    "changelogDate": "20181029151718",
+    "entityTableName": "partner_account",
+    "dto": "no",
+    "pagination": "no",
+    "service": "serviceImpl",
+    "jpaMetamodelFiltering": false,
+    "fluentMethods": true,
+    "clientRootFolder": "",
+    "applications": "*"
+}

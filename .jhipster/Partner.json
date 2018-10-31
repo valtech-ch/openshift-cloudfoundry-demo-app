@@ -1,0 +1,37 @@
+{
+    "name": "Partner",
+    "fields": [
+        {
+            "fieldName": "partnerName",
+            "fieldType": "String",
+            "fieldValidateRules": [
+                "required"
+            ]
+        },
+        {
+            "fieldName": "partnerType",
+            "fieldType": "PartnerType",
+            "fieldValues": "ISSUER,INVESTOR,OTHER",
+            "fieldValidateRules": [
+                "required"
+            ]
+        }
+    ],
+    "relationships": [
+        {
+            "relationshipType": "one-to-many",
+            "relationshipName": "account",
+            "otherEntityName": "partnerAccount",
+            "otherEntityRelationshipName": "partner"
+        }
+    ],
+    "changelogDate": "20181029151717",
+    "entityTableName": "partner",
+    "dto": "no",
+    "pagination": "no",
+    "service": "serviceImpl",
+    "jpaMetamodelFiltering": false,
+    "fluentMethods": true,
+    "clientRootFolder": "",
+    "applications": "*"
+}

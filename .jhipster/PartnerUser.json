@@ -1,0 +1,26 @@
+{
+    "name": "PartnerUser",
+    "fields": [
+        {
+            "fieldName": "userName",
+            "fieldType": "String"
+        }
+    ],
+    "relationships": [
+        {
+            "relationshipType": "one-to-many",
+            "relationshipName": "account",
+            "otherEntityName": "partnerAccount",
+            "otherEntityRelationshipName": "partnerUser"
+        }
+    ],
+    "changelogDate": "20181029151720",
+    "entityTableName": "partner_user",
+    "dto": "no",
+    "pagination": "no",
+    "service": "serviceImpl",
+    "jpaMetamodelFiltering": false,
+    "fluentMethods": true,
+    "clientRootFolder": "",
+    "applications": "*"
+}
