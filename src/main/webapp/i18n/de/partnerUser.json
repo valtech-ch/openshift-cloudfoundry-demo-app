@@ -1,0 +1,23 @@
+
+{
+    "pinguinApp": {
+        "partnerUser" : {
+            "home": {
+                "title": "Partner Users",
+                "createLabel": "Partner User erstellen",
+                "createOrEditLabel": "Partner User erstellen oder bearbeiten"
+            },
+            "created": "Partner User erstellt mit ID {{ param }}",
+            "updated": "Partner User aktualisiert mit ID {{ param }}",
+            "deleted": "Partner User gelöscht mit ID {{ param }}",
+            "delete": {
+                "question": "Soll Partner User {{ id }} wirklich dauerhaft gelöscht werden?"
+            },
+            "detail": {
+                "title": "Partner User"
+            },
+            "userName": "User Name",
+            "account": "Account"
+        }
+    }
+}

@@ -1,0 +1,10 @@
+{
+    "pinguinApp": {
+        "PartnerType" : {
+            "null": "",
+            "ISSUER": "ISSUER",
+            "INVESTOR": "INVESTOR",
+            "OTHER": "OTHER"
+        }
+    }
+}

@@ -1,0 +1,39 @@
+<div class="row justify-content-center">
+    <div class="col-8">
+        <div *ngIf="partnerAccount">
+            <h2><span jhiTranslate="pinguinApp.partnerAccount.detail.title">Partner Account</span> {{partnerAccount.id}}</h2>
+            <hr>
+            <jhi-alert-error></jhi-alert-error>
+            <dl class="row-md jh-entity-details">
+                <dt><span jhiTranslate="pinguinApp.partnerAccount.accountName">Account Name</span></dt>
+                <dd>
+                    <span>{{partnerAccount.accountName}}</span>
+                </dd>
+                <dt><span jhiTranslate="pinguinApp.partnerAccount.partner">Partner</span></dt>
+                <dd>
+                    <div *ngIf="partnerAccount.partner">
+                        <a [routerLink]="['/partner', partnerAccount.partner?.id, 'view']">{{partnerAccount.partner?.id}}</a>
+                    </div>
+                </dd>
+                <dt><span jhiTranslate="pinguinApp.partnerAccount.partnerUser">Partner User</span></dt>
+                <dd>
+                    <div *ngIf="partnerAccount.partnerUser">
+                        <a [routerLink]="['/partner-user', partnerAccount.partnerUser?.id, 'view']">{{partnerAccount.partnerUser?.id}}</a>
+                    </div>
+                </dd>
+            </dl>
+
+            <button type="submit"
+                    (click)="previousState()"
+                    class="btn btn-info">
+                <fa-icon [icon]="'arrow-left'"></fa-icon>&nbsp;<span jhiTranslate="entity.action.back"> Back</span>
+            </button>
+
+            <button type="button"
+                    [routerLink]="['/partner-account', partnerAccount.id, 'edit']"
+                    class="btn btn-primary">
+                <fa-icon [icon]="'pencil-alt'"></fa-icon>&nbsp;<span jhiTranslate="entity.action.edit"> Edit</span>
+            </button>
+        </div>
+    </div>
+</div>

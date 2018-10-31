@@ -1,0 +1,25 @@
+
+{
+    "pinguinApp": {
+        "partnerAccount" : {
+            "home": {
+                "title": "Partner Accounts",
+                "createLabel": "Create a new Partner Account",
+                "createOrEditLabel": "Create or edit a Partner Account"
+            },
+            "created": "A new Partner Account is created with identifier {{ param }}",
+            "updated": "A Partner Account is updated with identifier {{ param }}",
+            "deleted": "A Partner Account is deleted with identifier {{ param }}",
+            "delete": {
+                "question": "Are you sure you want to delete Partner Account {{ id }}?"
+            },
+            "detail": {
+                "title": "Partner Account"
+            },
+            "accountName": "Account Name",
+            "partner": "Partner",
+            "role": "Role",
+            "partnerUser": "Partner User"
+        }
+    }
+}

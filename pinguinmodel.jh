@@ -1,0 +1,47 @@
+entity Partner {
+	partnerName String required
+    partnerType PartnerType required
+}
+
+enum PartnerType {
+	ISSUER,
+    INVESTOR,
+    OTHER
+}
+
+entity PartnerAccount {
+	accountName String
+}
+
+entity PartnerRole {
+	roleName String
+}
+
+entity PartnerUser {
+	userName String
+}
+
+relationship OneToMany {
+	PartnerAccount{role} to PartnerRole
+}
+
+relationship OneToMany {
+	PartnerUser{account} to PartnerAccount
+}
+
+relationship OneToMany {
+	Partner{account} to PartnerAccount
+}
+
+
+
+
+
+// Use Data Transfert Objects (DTO)
+// dto * with mapstruct
+
+// Set service options to all except few
+service all with serviceImpl 
+
+// Set an angular suffix
+// angularSuffix * with mySuffix
